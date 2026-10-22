@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artistry Gallery & Transformations | Nail n Lash Studio & Academy Mohali</title>
+  
+  <meta name="description" content="Explore our client transformations: Gel & Acrylic Nails, 160+ Mega Lashes, Microblading Eyebrows, Lip Blush, and Korean Glass Skin at Nail n Lash Studio, SCO 107 Phase 10 Mohali.">
+  <meta name="keywords" content="Nail art portfolio Mohali, Eyelash extensions before after Chandigarh, Microblading gallery Punjab, Nail salon instagram Tricity">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#0d0c11',
+              card: '#15131b',
+              cardHover: '#1f1b27',
+              rose: '#d8a48f',
+              roseLight: '#f6eae5',
+              gold: '#cbb26a',
+              muted: '#9a94a2'
+            }
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            editorial: ['Cormorant Garamond', 'serif'],
+            sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-[#0d0c11] text-[#fcfbfa] antialiased">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-gradient-to-r from-[#1b1722] via-[#2a2233] to-[#1b1722] border-b border-[#d8a48f]/20 py-2 px-4 text-xs font-medium text-center flex items-center justify-between sm:justify-center gap-4 relative z-40">
+    <div class="flex items-center gap-2 mx-auto">
+      <span class="inline-block w-2 h-2 rounded-full bg-[#d8a48f] animate-ping"></span>
+      <span class="text-[#f6eae5] tracking-wide">
+        Follow our official Instagram <strong>@nailnlashstudio</strong> for daily transformations & reels!
+      </span>
+      <span class="hidden md:inline-block text-[#d8a48f] mx-2">|</span>
+      <a href="https://www.instagram.com/nailnlashstudio/?hl=en" target="_blank" class="hidden md:inline-flex items-center gap-1 text-[#d8a48f] hover:underline font-semibold">
+        <i data-lucide="instagram" class="w-3.5 h-3.5"></i> 14.3K+ Followers
+      </a>
+    </div>
+  </div>
+
+  <!-- Primary Header & Navigation -->
+  <header class="sticky top-0 z-40 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-[#d8a48f] to-[#cbb26a] p-0.5 shadow-lg group-hover:scale-105 transition-transform duration-300">
+            <div class="w-full h-full bg-[#0d0c11] rounded-full flex items-center justify-center">
+              <span class="font-serif text-lg font-bold text-[#d8a48f] tracking-tighter">NL</span>
+            </div>
+          </div>
+          <div>
+            <span class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-white block leading-none">
+              NAIL <span class="text-[#d8a48f] font-normal">&</span> LASH
+            </span>
+            <span class="text-[10px] uppercase tracking-[0.25em] text-[#a39ea8] font-semibold block mt-1">
+              Studio & Academy • Punjab
+            </span>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="nav-link text-sm tracking-wide text-[#a39ea8] hover:text-[#d8a48f] transition-colors py-2 font-medium">Home</a>
+          <a href="services.html" class="nav-link text-sm tracking-wide text-[#a39ea8] hover:text-[#d8a48f] transition-colors py-2 font-medium">Services & Menu</a>
+          <a href="academy.html" class="nav-link text-sm tracking-wide text-[#a39ea8] hover:text-[#d8a48f] transition-colors py-2 font-medium">Academy & Courses</a>
+          <a href="gallery.html" class="nav-link text-sm tracking-wide text-[#a39ea8] hover:text-[#d8a48f] transition-colors py-2 font-medium">Portfolio Gallery</a>
+          <a href="about.html" class="nav-link text-sm tracking-wide text-[#a39ea8] hover:text-[#d8a48f] transition-colors py-2 font-medium">About Us</a>
+          <a href="contact.html" class="nav-link text-sm tracking-wide text-[#a39ea8] hover:text-[#d8a48f] transition-colors py-2 font-medium">Location & Contact</a>
+        </nav>
+
+        <div class="hidden sm:flex items-center gap-3">
+          <button class="trigger-booking rose-gradient-btn px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider flex items-center gap-2 cursor-pointer">
+            <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+            <span>Book Appointment</span>
+          </button>
+        </div>
+
+        <button id="mobile-menu-btn" class="lg:hidden p-2 text-[#a39ea8] hover:text-white focus:outline-none">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-[#121017] border-b border-[#d8a48f]/20 px-6 py-6 space-y-4">
+      <div class="flex items-center justify-between pb-3 border-b border-white/10">
+        <span class="text-xs uppercase tracking-widest text-[#a39ea8] font-medium">Menu Navigation</span>
+        <button id="mobile-menu-close" class="text-[#a39ea8] hover:text-white p-1">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <div class="flex flex-col space-y-3 pt-2">
+        <a href="index.html" class="nav-link text-base text-[#a39ea8] hover:text-[#d8a48f] py-1.5 font-medium flex items-center justify-between">
+          <span>Home</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-white/30"></i>
+        </a>
+        <a href="services.html" class="nav-link text-base text-[#a39ea8] hover:text-[#d8a48f] py-1.5 font-medium flex items-center justify-between">
+          <span>Services & Menu</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-white/30"></i>
+        </a>
+        <a href="academy.html" class="nav-link text-base text-[#a39ea8] hover:text-[#d8a48f] py-1.5 font-medium flex items-center justify-between">
+          <span>Academy & Courses</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-white/30"></i>
+        </a>
+        <a href="gallery.html" class="nav-link text-base text-white hover:text-[#d8a48f] py-1.5 font-medium flex items-center justify-between">
+          <span>Portfolio Gallery</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-white/30"></i>
+        </a>
+        <a href="about.html" class="nav-link text-base text-[#a39ea8] hover:text-[#d8a48f] py-1.5 font-medium flex items-center justify-between">
+          <span>About Us</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-white/30"></i>
+        </a>
+        <a href="contact.html" class="nav-link text-base text-[#a39ea8] hover:text-[#d8a48f] py-1.5 font-medium flex items-center justify-between">
+          <span>Contact & Location</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-white/30"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="py-14 bg-gradient-to-b from-[#16131e] to-[#0d0c11] border-b border-[#d8a48f]/15 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+      <span class="text-xs uppercase tracking-[0.25em] text-[#d8a48f] font-semibold">Real Artistry • Real Results</span>
+      <h1 class="text-4xl sm:text-5xl font-serif font-bold text-white">The Artistry Portfolio</h1>
+      <p class="text-sm sm:text-base text-[#a39ea8] max-w-2xl mx-auto leading-relaxed">
+        Browse real transformations created at our Phase 10 Mohali studio. Every set is uniquely customized to complement our client's facial architecture, lifestyle, and aesthetic.
+      </p>
+    </div>
+  </section>
+
+  <!-- Gallery Filter Tabs -->
+  <section class="py-6 bg-[#0d0c11] sticky top-20 z-30 border-b border-white/5 backdrop-blur-md bg-[#0d0c11]/90">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-2 sm:gap-3 overflow-x-auto pb-2 scrollbar-none justify-start lg:justify-center">
+        <button class="gallery-tab active px-5 py-2 rounded-full text-xs font-semibold whitespace-nowrap transition-all border border-transparent" data-filter="all">
+          All Transformations
+        </button>
+        <button class="gallery-tab px-5 py-2 rounded-full text-xs font-semibold whitespace-nowrap transition-all bg-[#15131b] text-[#a39ea8] border border-white/10 hover:border-[#d8a48f]/40" data-filter="nails">
+          💅 Acrylic & Gel Nails
+        </button>
+        <button class="gallery-tab px-5 py-2 rounded-full text-xs font-semibold whitespace-nowrap transition-all bg-[#15131b] text-[#a39ea8] border border-white/10 hover:border-[#d8a48f]/40" data-filter="lashes">
+          👁️ Eyelash Extensions
+        </button>
+        <button class="gallery-tab px-5 py-2 rounded-full text-xs font-semibold whitespace-nowrap transition-all bg-[#15131b] text-[#a39ea8] border border-white/10 hover:border-[#d8a48f]/40" data-filter="pmu">
+          ✨ Microblading & PMU
+        </button>
+        <button class="gallery-tab px-5 py-2 rounded-full text-xs font-semibold whitespace-nowrap transition-all bg-[#15131b] text-[#a39ea8] border border-white/10 hover:border-[#d8a48f]/40" data-filter="skin">
+          🌸 Korean Glass Skin & Facials
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Showcase Grid -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Item 1: French Ombre Nails -->
+        <div class="gallery-item glass-card rounded-2xl overflow-hidden group" data-category="nails">
+          <div class="h-72 overflow-hidden relative img-zoom-container">
+            <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=700&q=80" alt="French Ombre Acrylic Nails" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#15131b] via-transparent to-transparent opacity-80"></div>
+            <span class="absolute top-4 left-4 badge-rose px-3 py-1 rounded-full text-[10px] font-semibold">Bridal Favorite</span>
+          </div>
+          <div class="p-5 space-y-2">
+            <div class="flex items-center justify-between">
+              <h3 class="text-base font-serif font-bold text-white">French Baby Boomer Ombre</h3>
+              <span class="text-xs text-[#cbb26a] font-semibold">Acrylic Set</span>
+            </div>
+            <p class="text-xs text-[#a39ea8]">Seamless gradient taper with Russian e-file cuticle prep and high gloss sealant.</p>
+            <div class="pt-2 flex justify-between items-center">
+              <span class="text-[10px] text-[#8c8694]">Duration: 90 mins</span>
+              <button class="trigger-booking text-xs text-[#d8a48f] hover:underline flex items-center gap-1" data-service="French Ombre Acrylic Nails">
+                Book This Look <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Mega Volume Lashes -->
+        <div class="gallery-item glass-card rounded-2xl overflow-hidden group" data-category="lashes">
+          <div class="h-72 overflow-hidden relative img-zoom-container">
+            <img src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?auto=format&fit=crop&w=700&q=80" alt="Russian Mega Volume Lashes" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#15131b] via-transparent to-transparent opacity-80"></div>
+            <span class="absolute top-4 left-4 badge-gold px-3 py-1 rounded-full text-[10px] font-semibold">160+ Lashes</span>
+          </div>
+          <div class="p-5 space-y-2">
+            <div class="flex items-center justify-between">
+              <h3 class="text-base font-serif font-bold text-white">Russian Fluffy Mega Volume</h3>
+              <span class="text-xs text-[#cbb26a] font-semibold">Lash Lounge</span>
+            </div>
+            <p class="text-xs text-[#a39ea8]">Featherlight 6D fan isolation offering intense density and deep eyeliner effect.</p>
+            <div class="pt-2 flex justify-between items-center">
+              <span class="text-[10px] text-[#8c8694]">Lasts: 4–6 Weeks</span>
+              <button class="trigger-booking text-xs text-[#d8a48f] hover:underline flex items-center gap-1" data-service="Mega Volume 160+ Lashes">
+                Book This Look <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Ombre Powder Brows PMU -->
+        <div class="gallery-item glass-card rounded-2xl overflow-hidden group" data-category="pmu">
+          <div class="h-72 overflow-hidden relative img-zoom-container">
+            <img src="https://images.unsplash.com/photo-1594913785162-e678a0c23cc9?auto=format&fit=crop&w=700&q=80" alt="Ombre Powder Brows PMU" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#15131b] via-transparent to-transparent opacity-80"></div>
+            <span class="absolute top-4 left-4 badge-rose px-3 py-1 rounded-full text-[10px] font-semibold">PMU Master</span>
+          </div>
+          <div class="p-5 space-y-2">
+            <div class="flex items-center justify-between">
+              <h3 class="text-base font-serif font-bold text-white">Ombre Powder Brow Styling</h3>
+              <span class="text-xs text-[#cbb26a] font-semibold">Semi-Permanent</span>
+            </div>
+            <p class="text-xs text-[#a39ea8]">Precision pixel shading for natural soft powdery brows that frame the eyes perfectly.</p>
+            <div class="pt-2 flex justify-between items-center">
+              <span class="text-[10px] text-[#8c8694]">Longevity: 2–3 Years</span>
+              <button class="trigger-booking text-xs text-[#d8a48f] hover:underline flex items-center gap-1" data-service="Ombre Powder Brows">
+                Book This Look <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Chrome Glass Nails -->
+        <div class="gallery-item glass-card rounded-2xl overflow-hidden group" data-category="nails">
+          <div class="h-72 overflow-hidden relative img-zoom-container">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=700&q=80" alt="Hailey Bieber Glazed Chrome Nails" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#15131b] via-transparent to-transparent opacity-80"></div>
+            <span class="absolute top-4 left-4 badge-rose px-3 py-1 rounded-full text-[10px] font-semibold">Trending Viral</span>
+          </div>
+          <div class="p-5 space-y-2">
+            <div class="flex items-center justify-between">
+              <h3 class="text-base font-serif font-bold text-white">Glazed Donut Chrome Nails</h3>
+              <span class="text-xs text-[#cbb26a] font-semibold">Gel Overlay</span>
+            </div>
+            <p class="text-xs text-[#a39ea8]">Pearl iridescent pigment buffed over sheer nude gel for an ethereal mirror shine.</p>
+            <div class="pt-2 flex justify-between items-center">
+              <span class="text-[10px] text-[#8c8694]">Duration: 60 mins</span>
+              <button class="trigger-booking text-xs text-[#d8a48f] hover:underline flex items-center gap-1" data-service="Chrome Glazed Gel Nails">
+                Book This Look <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5: Korean Glass Facial -->
+        <div class="gallery-item glass-card rounded-2xl overflow-hidden group" data-category="skin">
+          <div class="h-72 overflow-hidden relative img-zoom-container">
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=700&q=80" alt="Korean Glass Facial Result" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#15131b] via-transparent to-transparent opacity-80"></div>
+            <span class="absolute top-4 left-4 badge-gold px-3 py-1 rounded-full text-[10px] font-semibold">Instant Glow</span>
+          </div>
+          <div class="p-5 space-y-2">
+            <div class="flex items-center justify-between">
+              <h3 class="text-base font-serif font-bold text-white">Korean Glass Radiance</h3>
+              <span class="text-xs text-[#cbb26a] font-semibold">Clinical Facial</span>
+            </div>
+            <p class="text-xs text-[#a39ea8]">High-concentration hyaluronic infusion and cryotherapy for dewy, poreless skin.</p>
+            <div class="pt-2 flex justify-between items-center">
+              <span class="text-[10px] text-[#8c8694]">Zero Downtime</span>
+              <button class="trigger-booking text-xs text-[#d8a48f] hover:underline flex items-center gap-1" data-service="Korean Glass Facial">
+                Book This Look <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6: Hybrid Wispy Lashes -->
+        <div class="gallery-item glass-card rounded-2xl overflow-hidden group" data-category="lashes">
+          <div class="h-72 overflow-hidden relative img-zoom-container">
+            <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=700&q=80" alt="Wispy Hybrid Lashes" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#15131b] via-transparent to-transparent opacity-80"></div>
+            <span class="absolute top-4 left-4 badge-gold px-3 py-1 rounded-full text-[10px] font-semibold">120-159 Lashes</span>
+          </div>
+          <div class="p-5 space-y-2">
+            <div class="flex items-center justify-between">
+              <h3 class="text-base font-serif font-bold text-white">Kim K Wispy Hybrid Set</h3>
+              <span class="text-xs text-[#cbb26a] font-semibold">Lash Lounge</span>
+            </div>
+            <p class="text-xs text-[#a39ea8]">Varied length spikes interspaced with soft volume fans for fluttery elegance.</p>
+            <div class="pt-2 flex justify-between items-center">
+              <span class="text-[10px] text-[#8c8694]">Duration: 80 mins</span>
+              <button class="trigger-booking text-xs text-[#d8a48f] hover:underline flex items-center gap-1" data-service="Hybrid Lashes (120-159)">
+                Book This Look <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram Social Hub Section -->
+  <section class="py-16 bg-[#121017] border-y border-[#d8a48f]/15">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-6 mb-10">
+        <div>
+          <span class="text-xs uppercase tracking-[0.25em] text-[#d8a48f] font-semibold block">Social Buzz</span>
+          <h2 class="text-3xl font-serif font-bold text-white">Follow Our 14.3K+ Tribe</h2>
+          <p class="text-xs text-[#a39ea8] mt-1">Tag @nailnlashstudio in your salon stories to be featured</p>
+        </div>
+        <a href="https://www.instagram.com/nailnlashstudio/?hl=en" target="_blank" class="rose-gradient-btn px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider flex items-center gap-2">
+          <i data-lucide="instagram" class="w-4 h-4"></i>
+          <span>Follow @nailnlashstudio</span>
+        </a>
+      </div>
+
+      <!-- Simulated Instagram Posts Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        
+        <div class="bg-[#181522] border border-white/5 rounded-2xl p-4 space-y-3">
+          <div class="flex items-center gap-2">
+            <div class="w-7 h-7 rounded-full bg-[#d8a48f]/20 text-[#d8a48f] flex items-center justify-center font-bold text-[10px]">NL</div>
+            <span class="text-xs font-semibold text-white">nailnlashstudio</span>
+          </div>
+          <p class="text-xs text-[#d6d0db] leading-relaxed">
+            "Tricity girls, your Karwa Chauth & Diwali glam is officially SORTED! ✨❤️ Curated exclusive festive packages covering nails, lashes, skin & hair..."
+          </p>
+          <div class="flex items-center justify-between text-[11px] text-[#8c8694] pt-2 border-t border-white/5">
+            <span>❤️ 1,240 likes</span>
+            <span class="text-[#d8a48f]">View Reel</span>
+          </div>
+        </div>
+
+        <div class="bg-[#181522] border border-white/5 rounded-2xl p-4 space-y-3">
+          <div class="flex items-center gap-2">
+            <div class="w-7 h-7 rounded-full bg-[#d8a48f]/20 text-[#d8a48f] flex items-center justify-center font-bold text-[10px]">NL</div>
+            <span class="text-xs font-semibold text-white">nailnlashstudio</span>
+          </div>
+          <p class="text-xs text-[#d6d0db] leading-relaxed">
+            "POV: Things we are ghosting this October at NAIL N LASH 👻 Weak facial muscles, dull and dehydrated skin, and cancelling appointments! 🤭"
+          </p>
+          <div class="flex items-center justify-between text-[11px] text-[#8c8694] pt-2 border-t border-white/5">
+            <span>❤️ 892 likes</span>
+            <span class="text-[#d8a48f]">View Reel</span>
+          </div>
+        </div>
+
+        <div class="bg-[#181522] border border-white/5 rounded-2xl p-4 space-y-3">
+          <div class="flex items-center gap-2">
+            <div class="w-7 h-7 rounded-full bg-[#d8a48f]/20 text-[#d8a48f] flex items-center justify-center font-bold text-[10px]">NL</div>
+            <span class="text-xs font-semibold text-white">nailnlashstudio</span>
+          </div>
+          <p class="text-xs text-[#d6d0db] leading-relaxed">
+            "✨ IT'S HAPPENING! Celebrate sparkle, style & 2 fabulous years with Jewel Fest by Mohrani! Adding extra shine to your festive looks 🥂✨"
+          </p>
+          <div class="flex items-center justify-between text-[11px] text-[#8c8694] pt-2 border-t border-white/5">
+            <span>❤️ 1,510 likes</span>
+            <span class="text-[#d8a48f]">View Reel</span>
+          </div>
+        </div>
+
+        <div class="bg-[#181522] border border-white/5 rounded-2xl p-4 space-y-3">
+          <div class="flex items-center gap-2">
+            <div class="w-7 h-7 rounded-full bg-[#d8a48f]/20 text-[#d8a48f] flex items-center justify-center font-bold text-[10px]">NL</div>
+            <span class="text-xs font-semibold text-white">nailnlash_academy</span>
+          </div>
+          <p class="text-xs text-[#d6d0db] leading-relaxed">
+            "Serving Mohali • Chandigarh • Panchkula • Tricity • Punjab. DM 'LASH' to discuss your customized lash look or book your certification seat 💅"
+          </p>
+          <div class="flex items-center justify-between text-[11px] text-[#8c8694] pt-2 border-t border-white/5">
+            <span>❤️ 640 likes</span>
+            <span class="text-[#d8a48f]">View Academy</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer class="bg-[#09080d] border-t border-white/10 pt-16 pb-12 text-[#a39ea8] text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/5">
+        
+        <div class="lg:col-span-2 space-y-4">
+          <a href="index.html" class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-[#d8a48f] to-[#cbb26a] p-0.5">
+              <div class="w-full h-full bg-[#0d0c11] rounded-full flex items-center justify-center">
+                <span class="font-serif text-base font-bold text-[#d8a48f]">NL</span>
+              </div>
+            </div>
+            <div>
+              <span class="font-serif text-lg font-bold text-white block">NAIL & LASH</span>
+              <span class="text-[10px] tracking-widest uppercase text-[#d8a48f]">Studio & Academy LLP</span>
+            </div>
+          </a>
+          <p class="text-xs leading-relaxed max-w-sm text-[#8c8694]">
+            Punjab's premier high-definition beauty salon and certified training academy. Delivering bespoke nail extensions, eyelash enhancements, microblading PMU, and advanced clinical facials since 2019.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-xs uppercase tracking-widest text-white font-semibold">Explore</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors">All Services & Rates</a></li>
+            <li><a href="academy.html" class="hover:text-white transition-colors">Training Academy</a></li>
+            <li><a href="gallery.html" class="hover:text-white transition-colors">Portfolio Gallery</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About Our Studio</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact & Directions</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-xs uppercase tracking-widest text-white font-semibold">Services</h4>
+          <ul class="space-y-2">
+            <li><a href="services.html" class="hover:text-white transition-colors">Gel & Acrylic Nails</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors">160+ Mega Lashes</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors">Microblading & PMU</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors">Korean Glass Facial</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors">Keratin Hair Extension</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors">Rica & Brazilian Waxing</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-xs uppercase tracking-widest text-white font-semibold">Find Us</h4>
+          <p class="text-xs text-[#8c8694] leading-relaxed">
+            Ground Floor & Basement, SCO 107, Phase 10, Sector 64, SAS Nagar (Mohali), Punjab 160062
+          </p>
+          <div class="space-y-1.5 pt-1">
+            <a href="tel:08427520007" class="text-white hover:text-[#d8a48f] block font-medium">📞 084275 20007</a>
+            <a href="tel:+918401959479" class="text-white hover:text-[#d8a48f] block font-medium">📞 +91 84019 59479</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-[#716c7a]">
+        <p>© 2019–2026 Nail n Lash Studio & Academy LLP. All rights reserved.</p>
+        <div>Mohali • Chandigarh • Panchkula • Tricity</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Quick Booking / WhatsApp Actions Bar -->
+  <div class="fixed bottom-6 right-6 z-40 flex items-center gap-3">
+    <a href="https://wa.me/918427520007?text=Hi%20Nail%20n%20Lash%20Studio!%20I%20saw%20your%20portfolio%20gallery." target="_blank" class="w-13 h-13 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 p-3.5" title="Chat on WhatsApp">
+      <i data-lucide="message-circle" class="w-6 h-6"></i>
+    </a>
+    <button class="trigger-booking rose-gradient-btn px-5 py-3 rounded-full shadow-2xl text-xs font-bold uppercase tracking-wider flex items-center gap-2 cursor-pointer hover:scale-105 transition-transform duration-300">
+      <i data-lucide="calendar" class="w-4 h-4"></i>
+      <span class="hidden sm:inline">Book This Look</span>
+    </button>
+  </div>
+
+  <!-- Reusable Universal Booking Modal -->
+  <div id="booking-modal" class="fixed inset-0 z-50 modal-backdrop hidden items-center justify-center p-4">
+    <div class="bg-[#15131b] border border-[#d8a48f]/40 rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative animate-fade-in max-h-[92vh] overflow-y-auto">
+      <button id="close-booking-modal" class="absolute top-5 right-5 text-[#a39ea8] hover:text-white p-2">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <div class="space-y-1 mb-6 text-center">
+        <span class="text-[10px] uppercase tracking-widest text-[#d8a48f] font-semibold">Online Concierge</span>
+        <h3 class="text-2xl font-serif font-bold text-white">Book Your Look</h3>
+        <p class="text-xs text-[#a39ea8]">Select your design and slot. Confirmation directly via WhatsApp.</p>
+      </div>
+      <form id="booking-form" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold uppercase tracking-wider text-[#d6d0db] mb-1.5" for="book-name">Your Full Name *</label>
+          <input type="text" id="book-name" required placeholder="e.g. Jasleen" class="w-full bg-[#0d0c11] border border-white/10 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-[#d8a48f]">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold uppercase tracking-wider text-[#d6d0db] mb-1.5" for="book-phone">Phone Number *</label>
+          <input type="tel" id="book-phone" required placeholder="e.g. +91 98765 43210" class="w-full bg-[#0d0c11] border border-white/10 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-[#d8a48f]">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold uppercase tracking-wider text-[#d6d0db] mb-1.5" for="book-service">Service / Look Selected *</label>
+          <input type="text" id="book-service" required value="Custom Gallery Look" class="w-full bg-[#0d0c11] border border-white/10 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-[#d8a48f]">
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold uppercase tracking-wider text-[#d6d0db] mb-1.5" for="book-date">Preferred Date</label>
+            <input type="date" id="book-date" class="w-full bg-[#0d0c11] border border-white/10 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-[#d8a48f]">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold uppercase tracking-wider text-[#d6d0db] mb-1.5" for="book-time">Preferred Time</label>
+            <select id="book-time" class="w-full bg-[#0d0c11] border border-white/10 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-[#d8a48f]">
+              <option value="Morning (10:00 AM - 1:00 PM)">Morning (10:00 AM - 1:00 PM)</option>
+              <option value="Afternoon (1:00 PM - 4:30 PM)">Afternoon (1:00 PM - 4:30 PM)</option>
+              <option value="Evening (4:30 PM - 8:00 PM)">Evening (4:30 PM - 8:00 PM)</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold uppercase tracking-wider text-[#d6d0db] mb-1.5" for="book-notes">Notes / Photo reference link</label>
+          <textarea id="book-notes" rows="2" placeholder="e.g. Saw photo from gallery, want similar length" class="w-full bg-[#0d0c11] border border-white/10 rounded-xl px-4 py-2 text-xs text-white focus:outline-none focus:border-[#d8a48f]"></textarea>
+        </div>
+        <div class="pt-2">
+          <button type="submit" class="rose-gradient-btn w-full py-3.5 rounded-full text-xs font-semibold uppercase tracking-wider flex items-center justify-center gap-2 cursor-pointer shadow-lg">
+            <i data-lucide="check" class="w-4 h-4"></i>
+            <span>Confirm on WhatsApp</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
